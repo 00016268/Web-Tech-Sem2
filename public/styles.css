@@ -68,3 +68,20 @@
 
 }
 
+.form {
+    width: 40%;
+}
+
+.input {
+    display:block; 
+    width: 35%;
+    font-size: 1.3rem;
+    font-family: inherit;
+    margin-bottom: 1rem;
+    padding: 0.5;
+}
+
+.btn {
+    width: fit-content;
+    font-size: 1rem;
+}

@@ -1,19 +1,19 @@
 extends layout.pug
 
 block content
+    
+    if created 
+        p Student Added
 
-   
 
     .section.flex
        .list 
-         a(href="#") Raaid Rizvi / +998912287277
-         a(href="#") Irfan Raheem / +9989192747471
-         a(href="#") Dinu Pragash / +998994848882
-         a(href="#") Vishva Lakshan / +99891251351
-         a(href="#") Andrew Tate / +99891251255
-         a(href="#") Tristan Tate / +99891231234
-         a(href="#") Vinod Pragash / +9989123511142
-         a(href="#") Abby Silva / +998918283045
+            if students 
+                each student in students 
+                    a(href= student.id) #{student.fullname} / #{student.phone}
+
+    a.delete(href= `/${student.id}/delete`) Delete
+    
 
 
 

@@ -1,0 +1,22 @@
+extends layout.pug 
+
+block content 
+
+        .section 
+            form(action="/create", method="POST") 
+                label.label Fullname
+                input.input(type="text", name="fullname")
+
+                label.label Email
+                input.input(type="text", name="text")
+
+                label.label Phone
+                input.input(type="text", name="phone")
+
+                label.label Address
+                input.input(type="text", name="address")
+
+                label.label Post Code
+                input.input(type="text", name="postcode")
+
+                button.input.btn Add new Student
