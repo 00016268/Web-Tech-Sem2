@@ -8,6 +8,7 @@ const port = 3000
 app.set('view engine' , 'pug')
 app.use(express.json())
 app.use(urlencoded({extended : false}))
+app.use(express.static('public'))
 
 
 app.get('/', (req, res) => {
