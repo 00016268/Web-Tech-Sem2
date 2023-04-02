@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo > a{
+    text-decoration: none;
+    font-size: 2.8rem;
+    color: #000;
+    font-weight: 600px;
+
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.baseline {
+    align-items: baseline;
+}
+
+.section{
+    width: 1000px;
+    margin: 0 auto 2rem auto;
+}
+
+.nav > a {
+    margin-right: 1rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.nav > a:hover { 
+    border-bottom: 1px dotted #000;
+
+}
+
+.list, 
+.details {
+    width: 40%;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+}
+
+.list > a {
+    display: block;
+    width: 100%;
+    color: black;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+.list > a:hover {
+    background-color: #eee;
+
+}
+
